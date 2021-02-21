@@ -8,6 +8,12 @@ nav h1{
     font-size: 50px;
 }
 
+div#container{
+    display: flex;
+
+}
+
+
 nav button{
     position: relative;
     display: inline;
@@ -38,6 +44,7 @@ button:hover{
     border-style: solid;;
     background-color: white;
     margin-top:100px;
+    margin-left:10px;
 }
 .class h1{
     font-family: 'Times New Roman', Times, serif;
