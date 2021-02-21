@@ -27,3 +27,6 @@ if(loginform!=null){
         })
     })
 }
+
+const Class = document.getElementById('subject');
+const create = document.getElementById('create');
