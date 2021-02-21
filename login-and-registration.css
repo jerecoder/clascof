@@ -3,51 +3,47 @@
 html {
   background-color: bisque;
 }
-#title {
+h1 {
   padding-top: 200px;
   font-size: 60px;
   text-align: center;
   font-family: "Pacifico", cursive;
+  color: black;
 }
 
-#slogan{
-    font-size: 40px;
+label{
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+#email{
+    padding-left:35%;
+}
+
+input{
+    height: 20px;
+    width: 100px;
+    padding-left: 5px;
+    padding-right: 5px;
     text-align: center;
 }
 
-
-a{
-    text-decoration: none;
-    color: bisque;
-}
-
 button{
-    position: relative;
-    display: inline;
-    height: 50px;
-    width: 150px;
+    display:block;
+    margin-left: 45%;
+    margin-top:25px;
+    height: 75px;
+    width: 200px;
     border-radius: 15px;
     font-size: 20px;
     cursor: pointer;
     border: 2px solid;
-    background-color: black;
+    background-color: white;
     transition: 0.5s ease-in-out;
-}
-#log-btn{
-    margin-left: 40%;
-    text-decoration: none;
-
-}
-#sign-btn{
-    margin-left: 1%;
 }
 
 button:hover{
     font-size: 25px;
-    background-color: white;
+    background-color: black;
+    color:white;
 }
-a:hover{
-    color:black;
-}
-
-
