@@ -1,5 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 html{
     background-color: bisque;
+}
+nav h1{
+    font-family: "Pacifico","cursive";
+    font-size: 50px;
+}
+
+nav button{
+    position: relative;
+    display: inline;
+    height: 50px;
+    width: 150px;
+    border-radius: 15px;
+    border-color: black;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid;
+    background-color: white;
+    transition: 0.5s ease-in-out;
+    margin-left: 80%;
+    bottom:110px;
+}
+button:hover{
+    font-size: 25px;
+    background-color: black;
+    color:white;
+   
 }
 .class{
     width: 300px;
