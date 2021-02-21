@@ -14,7 +14,7 @@ if(signupform!=null){
         const email = signupform['inputEmail'].value;
         const psswrd = signupform['inputPassword'].value;
         auth.createUserWithEmailAndPassword(email,psswrd).then(cred =>{
-            location.replace("index.html");
+            location.replace("dash.html");
         })
     })
 }
@@ -26,7 +26,7 @@ if(loginform!=null){
         const email = loginform['inputEmail'].value;
         const psswrd = loginform['inputPassword'].value;
         auth.signInWithEmailAndPassword(email,psswrd).then(cred =>{
-            location.replace("index.html");
+            location.replace("dash.html");
         })
     })
 }

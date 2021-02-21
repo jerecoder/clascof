@@ -5,9 +5,13 @@ setTimeout(async function getDoc(id) {
     const data = snapshot.data();
     data.classes.forEach(c => {
         let cl = document.createElement("div");
-        cl.innerHTML=c;
-        let container = document.getElementById("container");;
+        let text = document.createElement("h1");
+        text.innerHTML=c;
+        cl.appendChild(text);
+        cl.className="class";
+        let container = document.getElementById("container");
         container.appendChild(cl);
+        console.log(c)
     });
   },1000)
 
