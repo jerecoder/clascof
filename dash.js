@@ -15,3 +15,9 @@ setTimeout(async function getDoc(id) {
     });
   },1000)
 
+  function bye(){
+    auth.signOut().then(()=>{
+        location.replace("index.html");
+    });
+}
+
