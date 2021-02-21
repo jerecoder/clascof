@@ -2,11 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>clasco</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+
+  <div id="container">
     
+  </div>
+
+<!-- FIREBASE AUTH -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+    https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyB5AidGUG12OZu1a8mFHDVAnLOfLEeX6CA",
+    authDomain: "clasco-a9539.firebaseapp.com",
+    projectId: "clasco-a9539",
+    storageBucket: "clasco-a9539.appspot.com",
+    messagingSenderId: "21105044220",
+    appId: "1:21105044220:web:031093a1ad1f28af600579",
+    measurementId: "G-HYDYX01L25"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+  </script>
+  <script src="index.js"></script>
+  <script src="dash.js"></script>
 </body>
 </html>

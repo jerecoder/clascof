@@ -1,6 +1,9 @@
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-        location.replace("dash.html");
+        db.collection("users").doc(user.uid).set({
+            name:user.email,
+            classes:["class1","class2","class3"]
+        })
     }
   });
 

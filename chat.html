@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <!-- Login Page -->
-  <form class="form-signin" id='form-login'>
-    <h1 class="h3 mb-3 font-weight-normal"style="color:white">Please log in</h1>
-    <label for="inputEmail" class="sr-only">Email address</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-    <div class="checkbox mb-3">
-    </div>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
+
+      <!-- Login Page -->
+  <form id='chat-form'>
+    <h1>chat with your teachers and students</h1>
+    <label for="message">Email address</label>
+    <input placeholder="type your message here" required="" autofocus="">
+    <button type="submit">submit</button>
   </form>
+  <div id="container">
+    
+  </div>
+
 <!-- FIREBASE AUTH -->
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
@@ -46,5 +47,6 @@
   const db = firebase.firestore();
   </script>
   <script src="index.js"></script>
+  <script src="chat.js"></script>
 </body>
 </html>
