@@ -3,62 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GITARCADE</title>
+    <title>clasco</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id='header'>
-        <h1 id='logo'>GITARCADE</h1>
-        <div class="counter">
-            <p>counter :</p>
-            <p id='num'>0</p>
-        </div>
-        <div id="registration">
-            <button type="button" class="btn btn-secondary btn-lg" id="log-btn"><a href="login.html" class="Register-btn">Log In</a></button>
-            <button type="button" class="btn btn-secondary btn-lg" id="sign-btn"><a href="signup.html" class="Register-btn">Sign Up</a></button>
-        </div>
-    </div>
-    <p id='ADD' onclick="updateadd()">ADD</p>
-    <h2>Open Source Games From GitHub</h2>
-    <p>This page is dedicated to the purpose of showcasing different mini arcade games that I found on GitHub <br /> 
-        There's a ranking next to each game, you can upvote or downvote, the games will be sorted in by the amount of votes
-    </p>
-    <div id='conteiner'>
-        <div class='game'><p onclick="update.call(this)" class="upvotes">0</p><a href="AvoisionJS/index.html" class="link">Avoison</a><a href="https://github.com/jaredkrinke/AvoisionJS"> [s]</a></div>
-        <div class='game'><p onclick="update.call(this)" class="upvotes">0</p><a href="arcade_game_fend/index.html" class="link">Frogger</a><a href="https://github.com/Syknapse/arcade_game_fend"> [s]</a></div>
-        <div class='game'><p onclick="update.call(this)" class="upvotes">0</p><a href="Game/index.html" class="link">Oscar's Game</a><a href="https://github.com/manojsinghnegiwd/shooting-arcade"> [s]</a></div>
-        <div class='game'><p onclick="update.call(this)" class="upvotes">0</p><a href="SimpleJSGame/index.html" class="link">SimpleJSGame</a><a href="https://github.com/ttibble90/SimpleJSGame"> [s]</a></div>
-        <div class='game'><p onclick="update.call(this)" class="upvotes">0</p><a href="hextris/index.html" class="link">Hextris</a><a href="https://github.com/Hextris/hextris.git"> [s]</a></div>
-        <div class='game'><p onclick="update.call(this)" class="upvotes">0</p><a href="spaceinvaders/index.html" class="link">spaceinvaders</a><a href="https://github.com/ttibble90/SimpleJSGame"> [s]</a></div>
-        <div class='game'><p onclick="update.call(this)" class="upvotes">0</p><a href="minesweeper/index.html" class="link">Minesweeper</a><a href="https://github.com/Hextris/hextris.git"> [s]</a></div>
-    </div>
-                    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
+                     <!-- The core Firebase JS SDK is always required and must be listed first -->
+                     <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-app.js"></script>
 
-        <!-- TODO: Add SDKs for Firebase products that you want to use
-            https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
-    <script>
-          // Your web app's Firebase configuration
-          // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-          var firebaseConfig = {
-            apiKey: "AIzaSyDgGC4XXFmj7rgQ63b9bfmuYF6sbLFkXGo",
-            authDomain: "gitarcade.firebaseapp.com",
-            projectId: "gitarcade",
-            storageBucket: "gitarcade.appspot.com",
-            messagingSenderId: "707494996366",
-            appId: "1:707494996366:web:e4c416f6a1b72abd339cdf",
-            measurementId: "G-X00L3YV71S"
-          };
-          // Initialize Firebase
-          firebase.initializeApp(firebaseConfig);
-          firebase.analytics();
-          const auth = firebase.auth();
-          const db = firebase.firestore();
-    </script>
-    <script src="index.js"></script>
+                     <!-- TODO: Add SDKs for Firebase products that you want to use
+                         https://firebase.google.com/docs/web/setup#available-libraries -->
+                 <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-analytics.js"></script>
+                 <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-auth.js"></script>
+                 <script src="https://www.gstatic.com/firebasejs/8.2.5/firebase-firestore.js"></script>
+                 <script>
+                       // Your web app's Firebase configuration
+                       // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+                       var firebaseConfig = {
+                         apiKey: "AIzaSyB5AidGUG12OZu1a8mFHDVAnLOfLEeX6CA",
+                         authDomain: "clasco-a9539.firebaseapp.com",
+                         projectId: "clasco-a9539",
+                         storageBucket: "clasco-a9539.appspot.com",
+                         messagingSenderId: "21105044220",
+                         appId: "1:21105044220:web:031093a1ad1f28af600579",
+                         measurementId: "G-HYDYX01L25"
+                       };
+                       // Initialize Firebase
+                       firebase.initializeApp(firebaseConfig);
+                       firebase.analytics();
+                       const auth = firebase.auth();
+                       const db = firebase.firestore();
+                 </script>
+                 <script src="index.js"></script>
 </body>
 </html>
